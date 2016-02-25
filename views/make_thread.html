@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>設定 - I</title>
+  <title>新スレッド作成 - I</title>
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-  <link href="../assets/css/setting.css" rel="stylesheet">
+  <link href="../assets/css/make_thread.css" rel="stylesheet">
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
   </script>
 </head>
@@ -26,6 +26,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
+      <!-- <ul class="nav navbar-nav">
+        <li class="active"><a href="#">お知らせ<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">よくある質問</a></li>
+      </ul> -->
+
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="#">ログイン<span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
@@ -44,59 +49,43 @@
 </nav>
 <div id="main" class="container"> 
   <div class="row">
-    <h2>設定</h2>
-  <div class="setting">
+    <h2>新スレッド作成</h2>
+  <div class="thread">
     <div class="table-responsive">
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th>ユーザ情報</th>
+          <th>必要事項</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>
             <div class="form-group">
-              <label for="userName">aaaaaaaa </label>
-            <input id="userName" name="userName" type="text" 
-            class="form-control"/>
+              <label for="title">スレッドタイトル </label>
+            <input id="title" name="title" type="text" 
+            class="form-control" required/>
            </div>
           </td>
         </tr>
         <tr>
-          <td><div class="form-group"><label for="password">現在のパスワード </label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="4文字以上8文字以内" /></div><br>
-            <div class="form-group"><label for="password">変更後のパスワード </label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="4文字以上8文字以内" /></div>
-          </td>
-        </tr>
-        <tr>
           <td>
-            <div class="form-group">
-              <label for="station">bbbbbbb </label>
-              <input type="text" class="form-control" id="station" 
-              name="station"/>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="myimage">プロフィール画像</label><br>
-            <img src="../assets/img/nanasi.png" class="img-polaroid img-responsive" name="myimage"><br>
+            <label for="myimage">スレッド画像</label><br>
+            <img src="img/nanasi.png" class="img-polaroid img-responsive" name="myimage"><br>
             <button class="btn">ファイル選択</button>
           </td>
         </tr>
         <tr id="comment">
           <td><div class="form-group">
-            <label for="comment">一言　</label>
-            <textarea class="form-control" id="comment" name="comment" style="resize:none" rows="3" placeholder="ccccccccccccc"></textarea></div></td>
+            <label for="comment">詳細説明　</label>
+            <textarea class="form-control" id="comment" name="comment" style="resize:vertical" rows="10"></textarea></div></td>
         </tr>
       </tbody>
    </table>
  </div>
  <div>
   <button class="btn btn-large btn-block btn-primary" type="button" id="btn">
-    更新</button>
+    作成</button>
  </div>
 </div>
 </div>

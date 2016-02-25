@@ -1,0 +1,99 @@
+html {
+    overflow: auto;
+}
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+/*#logo{
+  position: absolute;
+}*/
+
+#titlelogo{
+  color:#ff4d4d;
+  font-weight:bold;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  color:white;
+  line-height :1.4em;
+}
+
+li{
+  list-style-type: none;
+}
+
+.header {
+  text-align: center;
+  /*background-color: #eee;*/
+}
+
+.thread:img{
+  height: 480px;
+  width: 320px;
+}
+
+.thread #btn{
+  font-weight:bold;
+  font-size:30px;
+  margin-bottom: 10px;
+}
+
+.container{
+  margin-bottom: 30px;
+}
+
+.global-footer {
+  color:white;
+  padding-top:20px;
+  padding-bottom: 20px;
+  background: #2e2e2e;
+  text-align: center;
+  margin: 0 -500%; /* ネガティブマージンを追記 */
+  padding:20px  500%; /* マージンで横へはみ出した部分を相殺 */
+  margin-bottom: 0;
+}
+
+.footercontents {
+  margin:10px;
+}
+
+@media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width:480px) {
+  #greendoor {
+    width:100%;
+  }
+
+  #party{
+    width:100%;
+  }
+
+  #logo{
+    position: absolute;
+    width:60%;
+  }
+
+  #catchcopy {
+    position: absolute;
+    font-size: 30px;
+    padding-left: 25px;
+    padding-top: 80px;
+  }
+
+  .explanations{
+    margin-left: 20px;
+    margin-right:20px;
+  }
+
+  .examplestrong{
+    background-color: #ff8080;
+    border-radius: 7px;
+  }
+
+}
