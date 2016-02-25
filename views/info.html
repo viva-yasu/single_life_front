@@ -3,10 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>新規登録 - I</title>
+  <title>お知らせ - I</title>
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-  <link href="../assets/css/signup.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/bootstrap-select.css">
+  <link href="../assets/css/sub.css" rel="stylesheet">
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
   </script>
 </head>
@@ -39,57 +38,37 @@
             <li><a href="info.html">お知らせ</a></li>
             <li><a href="questions.html">よくある質問</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="signup">新規登録</a></li>
+            <li><a href="signup.html">新規登録</a></li>
           </ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse-->
   </div > <!--/.container-fluid-->
 </nav>
+<div class="container" id="hitoris">
+  <div class="row">
+   <div class="list-group">
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">見出し</h4>
+    <p class="list-group-item-text">本文</p>
+  </a>
+</div>
+<div class="list-group">
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">見出し</h4>
+    <p class="list-group-item-text">本文</p>
+  </a>
+</div>
+<div class="list-group">
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">見出し</h4>
+    <p class="list-group-item-text">本文</p>
+  </a>
+</div>
 
-<div class="text-center" style="padding:50px 0">
-      <div class="logo">新規登録</div>
-      <!-- Main Form -->
-      <div class="login-form-1">
-        <form id="login-form" class="text-left">
-          <div class="login-form-main-message"></div>
-          <div class="main-login-form">
-            <div class="login-group">
-              <div class="form-group">
-                <label for="username">Username(必須)</label>
-                <input type="text" class="form-control" id="username" name="username" placeholder="3文字以上15文字以内">
-              </div>
-              <div class="form-group">
-              <label for="email">Mail Adress(必須)　</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="大学のメールアドレス"/>
-              </div>
-              <div class="form-group">
-                <label for="password">Password(必須)</label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="4文字以上8文字以内">
-              </div>
-              <div class="form-group">
-              <label for="comment">最寄り駅名　</label>
-              <input class="form-control" id="station" name="station" type="text"/>
-              </div>
-              <div class="form-group">
-              <select class="form-control selectpicker">
-                <option> male </option>
-                <option> female </option>
-              </select>
-          </div>
-              <button class="btn btn-large btn-block btn-primary" type="button" id="btn"> 登録　</button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <!-- リンク -->
-        <div class="etc-login-form">
-        <p>ログインは<a href="./login.html">こちら</a></p>
-      </div>
-      <!-- end:Main Form -->
-    </div>
-
-<footer class="global-footer">
+</div>
+</div>
+ <footer class="global-footer">
   <nav>
     <h4><a href="hitoris.html">「HITORIs」</a>について</h4>
     <div class="footercontents">
@@ -102,13 +81,5 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="../assets/js/bootstrap.min.js"></script>
-<script src="../assets/js/bootstrap-select.js"></script>
-<script type="text/javascript">
-        $(window).on('load', function () {
-            $('.selectpicker').selectpicker({
-                'selectedText': 'cat'
-            });
-        });
-</script>
 </body>
 </html>
