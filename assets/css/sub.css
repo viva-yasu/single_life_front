@@ -1,6 +1,12 @@
-html,
+﻿
+html {
+    overflow: auto;
+}
 body {
-  margin-top:70px;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    position: relative;
+    margin-top:70px;
   background: #efefef;
 }
 /*=== 2. Anchor Link ===*/
@@ -54,16 +60,21 @@ li{
   margin-bottom: 3px;
 }
 
+#maker{
+  margin-bottom: 3px;
+
+}
+
 .global-footer {
   color:white;
   padding-top:20px;
   padding-bottom: 20px;
   background: #2e2e2e;
   text-align: center;
-  margin: 0 -500%; /* ネガティブマージンを追記 */
+  margin: 0 -500%;  /*ネガティブマージンを追記 */
   padding:20px  500%; /* マージンで横へはみ出した部分を相殺 */
-  margin-bottom: 0;
   margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 .footercontents {
