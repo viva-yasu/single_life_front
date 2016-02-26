@@ -55,7 +55,8 @@ li{
   text-align: center;
   margin: 0 -500%; /* ネガティブマージンを追記 */
   padding:20px  500%; /* マージンで横へはみ出した部分を相殺 */
-  margin-bottom: 0;
+  margin-top: 100px;
+  margin-bottom: -30px;
 }
 
 .footercontents {
